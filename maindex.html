@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js practice projects</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-1">
+        <div class="flex-cont-1">
+            <h1>Your age in days</h1> 
+                <div class="flex-cont-2">
+                    <div>
+                        <button class="btn" onclick="question_age()">Click me</button>
+                    </div>
+                    <div>
+                        <button class="btn" onclick="removal()">Reset</button>
+                    </div>     
+                </div>
+           <div id="result"></div>
+        </div>
+    </div>
+
+
+     <div class="container-2">
+         <h1>BlackJack</h1>
+         <h3><span id="blackjack-result">Let's Play</span></h3>
+             <div class="flex-black-row-1">
+                 <div id="your-box">
+                    <h2>You: <span id="your-blackjack-result">0</span></h2>
+                </div>
+                <div id="dealer-box">
+                    <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+                </div>
+            </div>
+             <div class="flex-black-row-2">
+                     <div> 
+                            <button class="btn btn-1" id="black-hit-btn">Hit</button>
+                            <button class="btn btn-2" id="black-stand-btn">Stand</button>
+                            <button class="btn btn-3" id="black-deal-btn">Deal</button>  
+                     </div>
+            </div>
+            <div class="flex-black-row-3">
+                <table>
+                  <tr>
+                      <th>Wins</th>
+                      <th>Losses</th>
+                      <th>Draws</th>
+                  </tr>
+                     <tr>
+                        <td><span id="wins">0</span></td>
+                        <td><span id="losses">0</span></td>
+                        <td><span id="draws">0</span> </td>
+                    </tr>
+                </table>
+            </div>
+     </div>
+    <script src="static/script.js"></script>
+</body>
+</html>
